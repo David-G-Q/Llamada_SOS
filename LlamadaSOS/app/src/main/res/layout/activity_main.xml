@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/img"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="200dp">
+
+        <EditText
+            android:id="@+id/editTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="200dp"
+            android:hint="Número de teléfono"
+            android:inputType="phone"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/editTelefono"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/black"
+            android:text="Agregar"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
